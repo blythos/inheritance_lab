@@ -50,4 +50,22 @@ public class DirectorTest {
         director.giveRaise(-300000);
         assertEquals(120000, director.getSalary(), 0.1);
     }
+
+    @Test
+    public void cannotGiveIncorrectNameType__isNull(){
+        director.setName(null);
+        assertEquals("Kev", director.getName());
+    }
+
+    @Test
+    public void cannotGiveIncorrectNameType__isEmptyString(){
+        director.setName("");
+        assertEquals("Kev", director.getName());
+    }
+
+    @Test
+    public void canSetName(){
+        director.setName("Kyle");
+        assertEquals("Kyle", director.getName());
+    }
 }

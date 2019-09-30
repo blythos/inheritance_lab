@@ -33,4 +33,10 @@ public abstract class Employee {
     public double bonus() {
         return salary * 0.01;
     }
+
+    public void setName(String name) {
+        if (name != null && name != ""){
+            this.name = name;
+        }
+    }
 }
