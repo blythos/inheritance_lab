@@ -37,7 +37,7 @@ public class DirectorTest {
 
     @Test
     public void canGetBonus(){
-        assertEquals(1200, director.bonus(), 0.1);
+        assertEquals(2400, director.bonus(), 0.1);
     }
 
     @Test
