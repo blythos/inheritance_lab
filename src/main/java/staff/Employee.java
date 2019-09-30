@@ -1,6 +1,6 @@
 package staff;
 
-public class Employee {
+public abstract class Employee {
 
     private String name;
     private String niNo;
@@ -25,7 +25,9 @@ public class Employee {
     }
 
     public void giveRaise(double raise) {
-        salary += raise;
+        if (raise >= 0){
+            salary += raise;
+        }
     }
 
     public double bonus() {
